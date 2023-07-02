@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="eng.css">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
+</head>
+<body>
+	<nav>
+			<div id="nav">
+				
+				<div>
+					<img src="../../icons/menu_icon.png" id="menu_icon" onclick="open_menu()">
+					<a href="#free_lesson">
+						<img src="../../icons/gift.png" id="gift">
+					</a>
+				</div>
+				<p id="nav_p">language school</p>
+				<img src="../../icons/eng_flag.png" id="eng_flag_icon" onclick="open_lang()">
+			</div>
+		</nav>
+	<header onclick="close_menu()">
+		
+		<div id="menu">
+			<div id="m_item_container">
+				<a href="#our_lessons" class="m_items">как проходят занятия</a>
+				<a href="#modern_way" class="m_items">наш подход</a>
+				<a href="#calc_price" class="m_items">рассчитать стоимость</a>
+			</div>
+		</div>
+		<div id="lang">
+			<div id="lang_block">
+				<a href="">
+					<div class="first_lang"id="eng_flag">
+						<img src="../../icons/eng_flag.png" class="flags" >
+					</div>
+				</a>
+				<a href="../deutsch/deu.html">
+				<div class="first_lang">	
+					<img src="../../icons/deu_flag.webp" class="flags">
+				</div>
+			</a>
+			</div>	
+			</div>
+			<div id="all_head">
+				<div id="left_side">
+					<p id="text">	
+						учи английский онлайн
+					</p>
+					<img src="../../photoes/man.png" id="man">
+				</div>
+				<div id="right_side">	
+					
+
+
+
+
+					<p id="text">
+						программы нашего обучения
+					</p>
+					<div id="how_we_learn">
+
+						<div class="how_l_item" id="first" onclick="programes1(this)">
+							<p class="how_l_item_p">
+								индивидуально
+							</p>
+						</div>
+						<div class="how_l_item" id="second" onclick="programes2(this)">
+							<p class="how_l_item_p">
+								в группах 
+							</p>
+						</div>
+						<div class="how_l_item" id="third" onclick="programes3(this)">
+							<p class="how_l_item_p">
+								для детей
+							</p>
+						</div>
+					</div>
+					<div id="program_text">
+						<p id="program_textP">
+							-Вы 1 на 1 с вашим преподавателем.<br>-Преподаватель будет уделять все внимание вам на ваших уроках.<br>-Преподаватель будет отвечать на ваши вопросы быстро и качественною.
+						</p>
+					</div>
+
+					<div id="registration">
+						<p id="reg_text">
+							бесплатный урок
+						</p>
+						<input type="text" id="email" class="reg_inp" placeholder="email">
+						<p class="error" id="email_err">email введен неправильно</p>
+						<input type="text" id="name" class="reg_inp" placeholder="name">
+						<p class="error" id="name_err">имя введено неправильно</p>
+						<input type="text" id="nummer" class="reg_inp" placeholder="nummet">
+						<p class="error" id='nummer_err'>номер введен неправильно</p>
+						<input type="submit" id="sub" value="зарегестрироватся" onclick="check_email()">
+					</div>
+
+				</div>
+			</div>
+		</header>
+		<main>
+			<div id="our_lessons">
+				<p id="our_lessons_p">как проходят занятия в нашей школе</p>
+				<div id="our_lessons_photoes">
+					<div class="our_lessons_item">
+						<img src="../../photoes/time.svg" class="our_lessons_photoes_img">
+						<p class="main_text">
+							50 минут
+						</p>
+						<p class="second_text">	
+							оптимальная длительность занятия
+						</p>
+					</div>
+					<div class="our_lessons_item">
+						<img src="../../photoes/week.svg" class="our_lessons_photoes_img">
+						<p class="main_text">
+							2-3 раза в неделю
+						</p>
+						<p class="second_text">	
+							исходя из вашего графика
+						</p>
+					</div>
+					<div class="our_lessons_item">
+						<img src="../../photoes/teacher.svg" class="our_lessons_photoes_img">
+						<p class="main_text">
+							учителя
+						</p>
+						<p class="second_text">	
+							наши учителя-носители языка
+						</p>
+					</div>
+					<div class="our_lessons_item">
+						<img src="../../photoes/price.svg" class="our_lessons_photoes_img">
+						<p class="main_text">
+							от 7 usd
+						</p>
+						<p class="second_text">	
+							за 1 урок
+						</p>
+					</div>
+				</div>
+			</div>
+			<div id="modern_way">
+				<div id="container_ul">
+					<p id="modern_p">
+						современный подход к обучению
+					</p>
+					<div id="list">
+						<ul id="list_ul">
+							<li class="list_li" id="fli" onclick="li1(this)">занятия онлайн</li>
+							<li class="list_li" id="sli" onclick="li2(this)">разговорные клубы</li>
+							<li class="list_li" id="thli" onclick="li3(this)">мобильное приложение</li>
+						</ul>
+					</div>
+				</div>
+				<div id="photoes">
+					<img src="../../photoes/online.jpg" id="photo">
+				</div>
+			</div>
+			<div id="calc_price">
+				<p id="price_p">
+					рассчитать стоимость курса
+				</p>
+				<div id="calc">
+					<div id="amount">
+						<p class="ammouunt_p"onclick="value(this)" id="p1">5</p>
+						<p class="ammouunt_p"onclick="value(this)" id="p2">10</p>
+						<p class="ammouunt_p"onclick="value(this)" id="p3">15</p>
+						<p class="ammouunt_p"onclick="value(this)" id="p4">30</p>
+					</div>
+					<div id="type">
+						<p class="type_p" onclick="type1()" id="t1">индивидуальный</p>
+						<p class="type_p" onclick="type2()" id="t2">в группе</p>
+						<p class="type_p" onclick="type3()" id="t3">детский</p>
+					</div>
+					<div id="calculate">
+						<p class="calc_p" onclick="calc()">рассчитать</p>
+						<p class="calc_p" id="res">цена</p>
+					</div>
+				</div>
+			</div>
+
+			<div id="free_lesson">
+
+				<p id="reg_text">
+					бесплатный урок
+				</p>
+				<input type="text" id="email" class="reg_inp" placeholder="email">
+				<p class="error" id="email_err">email введен неправильно</p>
+				<input type="text" id="name" class="reg_inp" placeholder="name">
+				<p class="error" id="name_err">имя введено неправильно</p>
+				<input type="text" id="nummer" class="reg_inp" placeholder="nummet">
+				<p class="error" id='nummer_err'>номер введен неправильно</p>
+				<input type="submit" id="sub" value="зарегестрироватся" onclick="check_email()">
+			</div>
+		</main>
+		
+		<footer>
+			<div id="dev_contacts">
+				<p id="dev_cont_p">контакты разработчика</p>
+				<p class="contacts">номер:+38 012 345 6789</p>
+				<p class="contacts">email:example@gmail.com</p>
+				<a href="t.me/example" class="contacts">telegram</a>
+			</div>
+			<div id="f_div">
+				<p id="footer_p">наши контакты</p>
+				<p class="contacts">номер:+38 012 345 6789</p>
+				<p class="contacts">email:example@gmail.com</p>
+				<a href="t.me/example" class="contacts">telegram</a>
+			</div>
+		</footer>
+		<script type="text/javascript" src="eng.js"></script>
+	</body>
+	</html>
